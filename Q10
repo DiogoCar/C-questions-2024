@@ -1,0 +1,24 @@
+#include <stdio.h>
+//Q10
+
+void rotina(double *x, double *y)
+{
+    printf("Digite um numero: ");
+    scanf("%le",x);
+    
+    printf("Digite outro numero: ");
+    scanf("%le",y);
+}
+
+
+int main()
+{
+    double a,b;
+    
+    rotina(&a,&b);
+    
+    printf("%le\n", a);
+    printf("%le", b);
+    
+    return 0;
+}
