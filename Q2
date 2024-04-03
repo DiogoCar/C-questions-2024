@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+//Q2 
+
+void N4B (int n) {
+    if (n / 2 != 0) {
+        N4B(n / 2);
+    }
+    printf("%d", n % 2);
+}
+
+int main()
+{
+    
+   int num; 
+    
+    printf("Digite o valor ");
+    scanf("%d",&num);
+   
+   printf ("%d em binario é:", num);
+  
+  N4B(num);
+}
