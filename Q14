@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+//Q14
+
+int TriangCheck(int a,int b, int c)
+{
+  if(a<b+c && b<a+c && c<a+b){
+    
+    printf("É Possivel formnar um triangulo");}else{printf("Não é Possivel formnar um triangulo"); return 0;}
+    
+    
+if(a== b && b == c){printf("\nÉ um triangulo equilatero");}
+else if(a!= b && b == c || b != c && c == a|| c!=a && a==b){printf("\nÉ um triangulo isoceles");} 
+else {printf("\nÉ um triangulo escaleno");}
+}
+
+int main()
+{
+    int x,y,z;
+    printf("Digite um numero: ");
+    scanf("%d",&x);
+    
+    printf("Digite outro numero: ");
+    scanf("%d",&y);
+    
+    printf("Digite outro numero: ");
+    scanf("%d",&z);
+    
+TriangCheck(x,y,z);
+    
+    return 0;
+}
