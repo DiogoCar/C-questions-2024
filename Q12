@@ -1,0 +1,31 @@
+#include <stdio.h>
+//Q12
+
+int tconver(int a)
+{
+   int b= a/60; 
+   
+   return(b);
+}
+
+int main()
+{
+int seg,min,h;
+
+printf("Digite o tempo em segundos: ");
+scanf("%d",&seg);
+
+min = tconver(seg);
+h = tconver(min);
+
+// ultrapassar de 60
+if(seg >=60){seg= seg-60*(seg/60); min+1*(seg/60);}
+if(min >=60){min= min-60*(min/60); h+1*(min/60);}
+
+// diritos maiores que 9
+
+if(h >= 10){printf("%d:",h);}else{printf("0%d:",h);}
+if(min >= 10){printf("%d:",min);}else{printf("0%d:",min);}
+if(seg >= 10){printf("%d:",seg);}else{printf("0%d:",seg);}
+
+}
