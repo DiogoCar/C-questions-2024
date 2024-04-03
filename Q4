@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Q4
+int main(int argc, char** argv) {
+
+
+
+    int n1,n2,r;
+    char op;
+    
+    
+    printf("Digite um numero: ");
+    scanf("%d",&n1);
+    
+    
+    printf("Digite um operador: ");
+    scanf("%c",&op);
+    
+    printf("Digite um numero: ");
+    scanf("%d",&n2);
+    
+    
+    if (op == '+')
+    {r= n1+n2;  
+    printf ("%d",n1);
+    printf ("%c",op);
+    printf ("%d",n2);
+    printf ("=%d",r);
+    } else if (op == '-')
+    {r= n1-n2;  
+    printf ("%d",n1);
+    printf ("%c",op);
+    printf ("%d",n2);
+    printf ("=%d",r);
+    } else if (op == '*')
+    {r= n1*n2;  
+    printf ("%d",n1);
+    printf ("%c",op);
+    printf ("%d",n2);
+    printf ("=%d",r);
+    } else if (op == '/')
+    {r= n1/n2;  
+    printf ("%d",n1);
+    printf ("%c",op);
+    printf ("%d",n2);
+    printf ("=%d",r);
+    } else {printf ("ERRO!");}
+    
+    
+  }
