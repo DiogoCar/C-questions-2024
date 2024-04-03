@@ -1,0 +1,10 @@
+#include <stdio.h>
+//Q11
+int main()
+{
+    printf("Boa ");
+    printf("noite ");
+    printf("meu ");
+    printf("consagrado ");
+    return 0;
+}
