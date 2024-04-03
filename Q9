@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Q9
+
+int comparação(int maior_numero,int menor_numero)
+{
+    int n;
+    
+       for(int i = 0; i < 10; i++) {
+        int n = rand() %100; 
+        printf("Número aleatório %d: %d\n", i+1, n);
+        
+   if(i == 0) {
+            maior_numero = n;
+            menor_numero = n;
+        }
+
+        if(n > maior_numero) {
+            maior_numero = n;
+        }
+        if(n < menor_numero) {
+            menor_numero = n;
+        } 
+    }
+       
+    printf("Menor Numero: %d\n", menor_numero);
+    printf("Maior Numero: %d", maior_numero);
+}
+ 
+    
+    
+
+int main()
+{
+ 
+    int x,y,r;
+    
+    r= comparação(x,y);
+
+    return 0;
+}
