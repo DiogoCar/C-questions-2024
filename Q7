@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <math.h>
+
+//Q7
+
+int vista(int x)
+{
+    
+    int a,b;
+    
+    a= (10*x)/100;
+    b= x-a;
+    
+    return (b);
+
+
+}
+
+int juros(int x, int y)
+
+{
+    
+    int a,b,c;
+    
+    a= (3*x)/100;
+    
+    c= (a*y);
+    
+    b= x+c;
+    
+    return (b);
+    
+}
+
+
+int main()
+{
+    double gasto,total,pacela;
+    int op;
+    
+    //Etapa da compra
+    printf("Insira o total gastado: ");
+    scanf("%le",&gasto);
+   
+
+    printf("Opção de pargamento: \n");
+    printf("(A vista [1] / em 2x [2] / 3-10x [3])");
+    scanf("%d",&op);
+  
+    
+    if(op == 3 && gasto >=100){
+    printf("Quantas vezes vai pacelar?: ");
+    scanf("%le",&pacela);
+        
+       if(pacela >=3 || pacela <= 10){
+           total = juros(gasto,pacela);
+           printf("%.2lf",total);
+       } else {printf("ERRO!");}
+        
+        
+    } else if (op == 2){  
+        total= gasto;
+        printf("%.2lf",total);
+    } else if (op == 1) {
+        
+         total= vista (gasto);
+         printf("%.2lf",total); 
+        
+    } else {printf("ERRO!");}
+    
+    return 0;
+}
