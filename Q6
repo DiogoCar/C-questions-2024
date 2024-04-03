@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+//Q6
+
+int f(int a,int b)
+{
+    int c;
+
+    c= (int) pow(a,b);
+  
+     return(c);
+}
+
+int main()
+{
+    int b, x,r;
+    
+    printf("Digite a base: ");
+    scanf("%d",&b);
+   
+    printf("Digite o exponencial: ");
+    scanf("%d",&x);
+    
+    r= f(b,x);
+    
+    printf("%d",r);
+    
+    return 0;
+}
