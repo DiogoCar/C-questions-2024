@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+//Q1 
+int main()
+{
+    
+   float m,dm,cm,mm; 
+    
+    printf("Digite o valor ");
+    scanf("%f",&m);
+    dm= m*10;
+    cm= m*100;
+    mm= m*1000;
+    
+    printf ("%f m= ",m);
+    printf ("%f dm \n",dm);
+    printf ("%f m= ",m);
+    printf ("%f cm \n",cm);
+    printf ("%f m= ",m);
+    printf ("%f mm \n",mm);
+    
+}
