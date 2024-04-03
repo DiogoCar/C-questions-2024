@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+//Q3 
+
+
+int main()
+{
+    
+   int a,b; 
+    
+    printf("Digite o valor de a: ");
+    scanf("%d",&a);
+   
+    printf("Digite o valor de b: ");
+    scanf("%d",&b);
+   
+   
+   if(a<b){
+       
+       int i;
+       
+       for(i=a; i<b; i++) {
+      
+       printf ("%d, ", i);
+        
+       }   printf ("%d ", b); } else if (a>b){
+       
+       int i;
+       
+       for(i=a; i>b; i--) {
+      
+       printf ("%d, ", i);
+        
+       }   printf ("%d ", b); } else { printf("São valores iguais!");}
+   
+  }
