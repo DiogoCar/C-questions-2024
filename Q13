@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+//Q13
+
+int media(int a,int b, int c)
+{
+    int m;
+    
+    m=(a+b+c)/3;
+    
+    printf("Media: %d",m);
+    
+    return (m);
+}
+
+int main()
+{
+    int x,y,z,r;
+    printf("Digite um numero: ");
+    scanf("%d",&x);
+    
+    printf("Digite outro numero: ");
+    scanf("%d",&y);
+    
+    printf("Digite outro numero: ");
+    scanf("%d",&z);
+    
+    r= media(x,y,z);
+    
+    return 0;
+}
