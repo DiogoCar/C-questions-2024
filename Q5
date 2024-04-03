@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Q5
+ 
+ 
+int soma (int a, int b) {
+    int c;
+    c=a+b;
+    
+    //printf("%d", c);
+    return(c);
+}
+
+int subtra (int a, int b) {
+    int c;
+    c=a-b;
+    
+    //printf("%d", c);
+    return(c);
+}
+ 
+ 
+int main(int argc, char** argv) {
+
+
+
+    int n1,n2,r;
+
+    
+    
+    printf("Digite um numero: ");
+    scanf("%d",&n1);
+    
+    printf("Digite um numero: ");
+    scanf("%d",&n2);
+    
+    r= soma(n1,n2);
+  
+
+  printf("Soma: %d \n",r);
+    
+    r= subtra(n1,n2);
+    
+    printf("Subtração: %d",r);
+  }
