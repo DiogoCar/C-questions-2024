@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+//Q15
+
+int main()
+{
+    int sal,h;
+    printf("Digite o salario semanal: ");
+    scanf("%d",&sal);
+    
+    printf("Digite as horas trabalhadas por semana: ");
+    scanf("%d",&h);
+    
+  if(h> 60){sal=sal*2;}else if (h>40 && h <=60){sal=sal+(sal/2);}else{sal=sal;}
+    
+    printf("Salario: %d",sal);
+    
+    return 0;
+}
