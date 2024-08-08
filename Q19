@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+//Q19
+
+int main()
+{
+    int nota,faltas,aulas,freq1,freq2;
+    
+    
+    
+    printf("Total de aulas: ");
+    scanf("%d",&aulas);
+    
+    printf("Media do aluno: ");
+    scanf("%d",&nota);
+        if(nota > 100){nota=100;}
+    
+    printf("Total de faltas: ");
+    scanf("%d",&faltas);
+        if(faltas >= aulas){faltas= aulas;}
+        
+        
+    freq1= (aulas*75)/100;
+    freq2= aulas - faltas;
+
+  printf ("Media final %d ",nota);
+  printf ("Frequencia %d ",freq2);
+    if(nota>=70 && freq2 >= freq1) {
+        printf("1");
+    }else {printf("0");}
+    
+    return 0;
+}
