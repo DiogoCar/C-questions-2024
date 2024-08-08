@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+//Q16
+
+int main()
+{
+    int ta,tb,pon;
+    
+    
+    
+    printf("Diz o placar do time 1:");
+    scanf("%d",&ta);
+
+    printf("Diz o placar do time 2:");
+    scanf("%d",&tb);
+
+if(ta==3 && tb==2){pon= 20;}
+else
+    if(ta>tb && tb==2 || ta>tb && ta==3){pon= 15;}
+    else
+        if(ta>tb){pon= 10;}
+        else
+            if(ta==3 || tb==2){pon= 5;}
+            else{pon= 0;}
+
+    printf ("Placar final [3x2]! total de pontos: %d ",pon);
+}
