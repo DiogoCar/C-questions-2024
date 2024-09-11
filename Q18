@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+//Q18
+int numPrimo(int x) {
+    if (x <= 1) return 0; 
+    for (int y = 2; y * y <= x; y++) {
+        if (x % y == 0) return 0; 
+    }
+    return 1; 
+}
+
+
+int main() {
+    int n;
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+    if (numPrimo(n)) {
+        printf("%d é primo.\n", n);
+    } else {
+        printf("%d não é primo.\n", n);
+    }
+
+}
